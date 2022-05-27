@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #heading{
+        width: 20%;
+        border: 1px;
+        margin: auto;
+        font-size: 20px;
+        text-align: center;
+        color: #018080;
+      }
+
+      #top{
+        width: 22%;
+        height: 500px;
+        border: 1px;
+        margin: auto;
+        margin-top: 20px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        padding-top: 20px;
+      }
+
+      #display{
+        width: 90%;
+        height: 15%;
+        border: 1px;
+        margin: auto;
+        margin-top: 20px;
+        border-radius: 15px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      }
+
+      #button{
+        width: 90%;
+        margin: auto;
+        border: 1px;
+        display: flex;
+        margin-top: 10px;
+      }
+
+
+      #button>div{
+        width: 70px;
+        height: 70px;
+        border: 1px;
+        margin: auto;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px;
+        font-size: large;
+        font-weight: bold;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      }
+
+      #top > div:nth-child(5) > div:first-child{
+        background-color: red;
+      }
+
+      #top > div:nth-child(5) > div:nth-child(3),#top > div:nth-child(2) > div:last-child,#top > div:nth-child(3) > div:last-child,#top > div:nth-child(4) > div:last-child,#top > div:nth-child(5) > div:last-child{
+        background-color: black;
+        color: white;
+      }
+
+    </style>
+  </head>
+    <body>
+      <div id="heading"><h1>Masai Calculator</h1></div>
+      <div id="top">
+        <div id="display"></div>
+          <div id="button">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>+</div>
+          </div>
+          <div id="button">
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>-</div>
+          </div>
+          <div id="button">
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>x</div>
+          </div>
+          <div id="button">
+            <div>C</div>
+            <div>0</div>
+            <div>=</div>
+            <div>/</div>
+        </div>
+      </div>
+    </body>
+</html>

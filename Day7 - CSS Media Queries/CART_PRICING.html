@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #heading{
+        width: 40%;
+        border: 1px;
+        margin: auto;
+        text-align: center;
+      }
+
+      #heading > h1{
+        font-size: 40px
+      }
+
+      #heading > p{
+        font-size: 20px;
+        line-height: 22px;
+        color: grey;
+      }
+
+      #cards-section{
+        width: 60%;
+        margin: auto;
+        border: 1px ;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: auto;
+        gap: 25px;
+        padding-top: 3%;
+      }
+
+      #cards-section div{
+        width: 100%;
+        border: 1px ;
+        margin: auto;
+        text-align: center;
+        border-radius: 25px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+      }
+
+      p~p{
+        padding: 0px 25px 0px 25px;
+        font-size: 22px;
+      }
+
+      div h1{
+        margin-bottom: 0px;
+      }
+
+      h2 + h1{
+        margin-bottom: -10px;
+      }
+
+      h2 + h1 + p{
+        font-style: italic;
+      }
+
+      p + p + button{
+        background-color: white;
+        font-size: 20px;
+        font-weight: 600;
+        color: blue;
+        padding: 15px 40px 15px 40px;
+        border: 1px solid blue;
+        border-radius: 10px;
+        margin:40px 0px 50px 0px;
+      }
+
+      #cards-section > div:first-child > h1{
+        color:green;
+      }
+
+      #cards-section > div:nth-child(2) > h1{
+        color: orange;
+      }
+
+      #cards-section > div:last-child > h1{
+        color: blue;
+      }
+
+      @media all and (min-width: 480px) and (max-width: 720px){
+        #cards-section{
+        width: 90%;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,auto);
+      }
+
+      #heading{
+        width: 100%;
+        border: 1px;
+      }
+
+      #heading > h1{
+        font-size: 40px
+      }
+
+      }
+
+      @media all and (min-width: 320px) and (max-width: 479px){
+          
+      #cards-section{
+        width: 90%;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(1,auto);
+       }
+
+       #heading{
+        width: 100%;
+        border: 1px;
+       }
+
+       #heading > h1{
+        font-size: 25px
+       }
+
+       #heading > p{
+        font-size: 20px;
+        line-height: 18px;
+        color: grey;
+      }
+
+      p~p{
+        padding: 0px 25px 0px 25px;
+        font-size: 20px;
+      }
+     }
+
+    </style>
+  </head>
+  <body>
+    <div id="heading">
+      <h1>Choose a plan that right for your business</h1>
+      <p>
+        We collect reviews from our users so you can get an honest opinion of
+        what an experience with our website are really like!
+      </p>
+    </div>
+
+    <!-- Cards section -->
+    <div id="cards-section">
+      <!-- This section should contain 3 children divs, each div should have h2,h1,p,p,button -->
+      <div>
+        <h2>Starter Plan</h2>
+        <h1>Free</h1>
+        <p>Per month</p>
+        <p>We collect reviews from our users so you can get an honest opinion of
+          what an experience with our website.</p>
+        <button>Start Now</button>
+      </div>
+
+      <div>
+        <h2>Starter Plan</h2>
+        <h1>$39.00</h1>
+        <p>Per month</p>
+        <p>We collect reviews from our users so you can get an honest opinion of
+          what an experience with our website.</p>
+          <button>Start Now</button>
+      </div>
+
+      <div> 
+        <h2>Starter Plan</h2>
+        <h1>$59.00</h1>
+        <p>Per month</p>
+        <p>We collect reviews from our users so you can get an honest opinion of
+          what an experience with our website.</p>
+          <button>Start Now</button>
+      </div>
+    </div>
+  </body>
+</html>

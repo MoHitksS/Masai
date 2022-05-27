@@ -1,0 +1,502 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERIODIC TABLE</title>
+    <style>
+        #main{
+            width: 80%;
+            height: 500px;
+            margin: auto;
+        }
+
+        #box{
+            text-align: center;
+        }
+
+        #container{
+            width: 80%;
+            height: 420px;
+            margin: auto;
+            display:flex;
+
+        }
+
+        .one{
+            width:4%;
+            margin: auto;
+            margin-bottom: 0px;
+            
+
+        }
+
+        #main > #box > #container > #first > div{
+            background-color: #89a02c;
+            width : 100%;
+            height: 10%;
+            margin: auto;
+            margin-top: 5px;
+            border: 2px solid #24261b;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+
+        #main > #box > #container > #second > div{
+            background-color: #ff5555;
+            width : 100%;
+            height: 10%;
+            margin: auto;
+            margin-top: 5px;
+            border: 2px solid #24261b;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 8px;
+        }
+
+        #main > #box > #container > #three > div{
+            background-color: #ffe6d5;
+            width : 90%;
+            height: 8.6%;
+            margin: auto;
+            margin-top: 5px;
+            border: 5px solid #24261b;
+            margin-bottom: 8px;
+        }
+
+        #main > #box > #container > #four > div{
+            background-color: blue;
+            width : 100%;
+            height: 10%;
+            margin: auto;
+            margin-top: 5px;
+            border: 2px solid #24261b;
+            margin-bottom: 8px;
+            
+        }
+
+        #main > #box > #container > #five > div{
+            background-color: #ff6600;
+            width : 100%;
+            height: 10%;
+            margin: auto;
+            margin-top: 5px;
+            border: 2px solid #24261b;
+            margin-bottom: 8px;
+        }
+
+        #main > #box > #container > #six > div{
+            background-color: #5aa02c;
+            width : 100%;
+            height: 10%;
+            margin: auto;
+            margin-top: 5px;
+            border: 2px solid #24261b;
+            margin-bottom: 8px;
+        }
+
+
+        #main > #box > #container > #seven > div{
+            background-color: #5aa02c;
+            width : 100%;
+            height: 10%;
+            margin: auto;
+            margin-top: 5px;
+            border: 2px solid #24261b;
+            margin-bottom: 8px;
+        }
+
+        #main > #box > #container > #eight > div{
+            background-color: #5aa02c;
+            width : 100%;
+            height: 10%;
+            margin: auto;
+            margin-top: 5px;
+            border: 2px solid #24261b;
+            margin-bottom: 8px;
+        }
+
+        #main > #box > #container > #nine > div{
+            background-color: #ff0066;
+            width : 100%;
+            height: 10%;
+            margin: auto;
+            margin-top: 5px;
+            border: 2px solid #24261b;
+            margin-bottom: 8px;
+        }
+
+        #main > #box > #container > #ten > div{
+            background-color: #fc0;
+            width : 100%;
+            height: 10%;
+            margin: auto;
+            margin-top: 5px;
+            border: 2px solid #24261b;
+            margin-bottom: 8px;
+        }
+
+        
+        
+        #main > #box > #container > #five > div:last-child{
+            background-color: #6d535e;
+            color: white;
+        }
+
+        #main > #box > #container > #five > div:first-child{
+            background-color: #aa0087;
+            color: white;
+        }
+
+        #main > #box > #container > #six > div:last-child{
+            background-color: #6d535e;
+            color: white;
+        }
+
+        #main > #box > #container > #six > div:nth-child(2),#main > #box > #container > #six > div:nth-child(3){
+            background-color: #aa0087;
+            color: white;
+        }
+        #main > #box > #container > #six > div:nth-child(4),#main > #box > #container > #six > div:nth-child(5){
+            background-color: #ff6600;
+            color: white;
+        }
+
+        #main > #box > #container > #seven > div:last-child{
+            background-color: #6d535e;
+            color: white;
+        }
+
+        #main > #box > #container > #seven > div:nth-child(3),#main > #box > #container > #seven > div:nth-child(4){
+            background-color: #aa0087;
+            color: white;
+        }
+
+        #main > #box > #container > #seven > div:nth-child(5){
+            background-color: #ff6600;
+            color: white;
+        }
+
+        #main > #box > #container > #eight > div:last-child{
+            background-color: #6d535e;
+            color: white;
+        }
+
+        #main > #box > #container > #eight > div:nth-child(4), #main > #box > #container > #eight > div:nth-child(5){
+            background-color: #aa0087;
+            color: white;
+        }
+
+        #main > #box > #container > #nine > div:last-child{
+            background-color: #6d535e;
+            color: white;
+        }
+
+        #main > #box > #container > #ten > div:last-child{
+            background-color: #6d535e;
+            color: white;
+        }
+
+        #main > #box > #container > #four > #diff:nth-child(1),#main > #box > #container > #four > #diff:nth-child(2),#main > #box > #container > #four > #diff:nth-child(3){
+      
+            width: 80px;
+            border: 1px;
+            background-color: #6d535e;
+            background-color: #5aa02c;
+            margin: 0px 0px 0px 0px;
+            display: flex;
+            align-items:center;
+            display: flex;
+            align-items:left;
+            justify-content: left;
+            
+            
+        }
+        #main > #box > #container > #four > #diff:nth-child(3) {
+         
+            padding-top: 10px;
+            text-align: left;
+
+        }
+
+         
+        #main > #box > #container > #four > #diff1:nth-child(1){
+           
+            width: 80px;
+            border: 1px;
+            background-color: #6d535e;
+            background-color: #5aa02c;
+            display: flex;
+            align-items:center;
+            margin-bottom: 0px;
+            
+            
+        }
+        #main > #box > #container > #four > #diff1:nth-child(1) >p{
+            padding-left: 50px;
+            font-size: 20px;
+            
+        }
+
+        h1{
+            margin-top: 50px;
+        }
+
+
+        h2{
+            font-size: 50px;
+            padding-left: 10px;
+        }
+
+        h4{
+            padding-left: 10px;
+            font-size: 16px;
+        }
+
+        #main>div:last-child{
+            width: 40%;
+            height:100px;
+            border: 1px solid #483e1c;
+            margin: auto;
+            margin-top: 70px;
+        }
+
+        .table{
+            display: flex;
+        }
+
+        .table1{
+            display: flex;
+        }
+        .table >div{
+            width:100%;
+            height:48px;
+            border: 1px solid #7a6b60;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #47582e;
+            color: white;
+        }
+
+        .table1 >div{
+            width:100%;
+            height:48px;
+            border: 1px solid #7a6b60;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #95bc5f;
+        }
+
+    </style>
+</head>
+    <body>
+        <div id="main">
+            <div id="box">
+                <h1>THE PERIODIC TABLE OF ELEMENTS</h1>
+                <div id="container">
+                    <div class="one" id ="first">
+                        <div>H</div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+
+                    <div class="one" id ="second">
+                        <div>4</div>
+                        <div>12</div>
+                        <div>20</div>
+                        <div>38</div>
+                        <div>56</div>
+                        <div>88</div>
+                    </div>
+
+                    <div class="one" id ="three">
+                        <div></div>
+                        <div></div>
+                    </div>
+
+
+                    <div class="one" id ="four">
+
+                        <div id="diff"></div>
+                        <div id="diff"><h2>Si</h1></div>
+                        <div id="diff"><h4>Silicion</h4></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+
+                    <div class="one" id ="four">
+                        
+                        <div id="diff1"><p>14</p></div>
+                        <div id="diff"></div>
+                        <div id="diff"></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+
+                    <div class="one" id ="four">
+                        
+                        
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+
+                    <div class="one" id ="four">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+
+                    <div class="one" id ="four">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="one" id ="four">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+
+                    <div class="one" id ="four">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+
+                    <div class="one" id ="four">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+
+                    <div class="one" id ="four">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+
+                    <div class="one" id ="five">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        
+                    </div>
+
+
+                    <div class="one" id ="six">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        
+                    </div>
+
+                    <div class="one" id ="seven">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        
+                    </div>
+
+
+                    <div class="one" id ="eight">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                       
+                    </div>
+
+
+                    <div class="one" id ="nine">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        
+                    </div>
+
+
+                    <div class="one" id ="ten">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="table">
+                    <div>La</div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="table1">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div>Am</div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div>No</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

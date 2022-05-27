@@ -1,0 +1,116 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MASAI NAVBAR</title>
+    <style>
+
+        *{
+            font-size: 15px;
+            font-family: Open Sans,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+        }
+        #container{
+            width: 100%;
+            height: 60px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        #container>div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 500;
+
+        }
+
+        #container>div:first-child{
+           width: 10%;
+        }
+
+        #container>div:last-child{
+            width: 65%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            text-transform: uppercase;
+        }
+
+        #container>div:last-child >div:nth-child(7) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #7588d1;
+            padding: 0px 30px;
+            border-radius: 8px;
+
+        }
+
+        #container>div:last-child >div:nth-child(7):hover {
+            background-color: CFE9EE;
+        }
+
+        #container>div:last-child >div:nth-child(7) >img{
+            display: flex;
+            width: 30px;
+            margin-left: 10px;
+            
+        }
+
+        select{
+            border: none;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-family: Open Sans,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+        }
+
+        button{
+            border: 1px solid red;
+            border-radius: 5px;
+            background-color: white;
+            padding: 15px;
+            color: red;
+            
+        }
+
+        button:hover{
+            background-color: #fedfe5;
+        }
+
+        #container>div:last-child > p:hover{
+            color: red;
+        }
+
+        select:hover{
+            color: red;
+        }
+
+    </style>
+</head>
+    <body>
+        <div id="container">
+            <div>
+                <img src="https://www.masaischool.com/img/navbar/logo.svg" alt="masaischool">
+            </div>
+            <div>
+                <select>
+                    <option value="">Courses</option>
+                </select>
+                <p>fees & isa</p>
+                <p>About us</p>
+                <p>hire from us</p>
+                <p>faq</p>
+                <p>events</p>
+                <div>
+                    <p>Refer & Earn</p>
+                    <img src="https://www.masaischool.com/img/referral/hand.png" alt="love">
+                </div>
+                <button>LOGIN</button>
+            </div>
+
+        </div>
+    </body>
+</html>

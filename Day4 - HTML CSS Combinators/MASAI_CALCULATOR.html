@@ -1,0 +1,112 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MASAI CALCULATOR</title>
+    <style>
+        #heading{
+            width: 30%;
+            font-size: 26px;
+            font-weight: 900;
+            border: 1px;
+            margin: auto;
+            margin-top: 2% ;
+            text-align: center;
+            color: #00807f;
+        }
+
+        #container{
+            width: 20%;
+            height: auto;
+            margin: auto;
+            margin-top: 4%;
+            border: 1px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            padding: 50px;
+        }
+
+        #container > div:nth-child(1){
+            width: 98%;
+            height: 9%;
+            margin: auto;
+            border: 1px;
+            border-radius: 10px;
+            margin-bottom: 5px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+
+        #container > div:nth-child(2), #container > div:nth-child(3),#container > div:nth-child(4),#container > div:nth-child(5) {
+            width: 100%;
+            margin: auto;
+            border: 1px;
+            display: flex;
+            margin-top: 10px;
+            /* margin: 0px 0px 0px 0px; */
+        }
+
+        #container > div:nth-child(2) > div, #container > div:nth-child(3)  > div,#container > div:nth-child(4)  > div,#container > div:nth-child(5)  > div{
+            width: 70px;
+            height: 70px;
+            margin: auto;
+            border: 1px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: x-large;
+            font-weight: bold;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+
+        #container > div:nth-child(5) > div:first-child{
+            background-color: red;
+            color: white;
+        }
+
+        #container > div:nth-child(5) > div:nth-child(3), #container > div:nth-child(5) > div:nth-child(3),#container > div:nth-child(5) > div:nth-child(4) {
+            background-color: black;
+            color: white;
+        }
+
+        #container > div:nth-child(2) > div:last-child, #container > div:nth-child(3) > div:last-child,#container > div:nth-child(4) > div:last-child{
+            background-color: black;
+            color: white;
+        }
+
+    </style>
+</head>
+    <body>
+        <div id="heading">
+            <h1>Masai Calculator</h1>
+        </div>
+
+        <div id="container">
+            <div></div>
+            <div>
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>+</div>
+            </div>
+            <div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>-</div>
+            </div>
+            <div>
+                <div>7</div>
+                <div>8</div>
+                <div>9</div>
+                <div>x</div>
+            </div>
+            <div>
+                <div>C</div>
+                <div>0</div>
+                <div>=</div>
+                <div>/</div>
+            </div>
+        </div>
+    </body>
+</html>
