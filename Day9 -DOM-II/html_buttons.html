@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Buttons</title>
+    <style>
+
+        *{
+            border: none;
+            color: white;
+        }
+        #container{
+            width: 70%;
+            height: auto;
+            display: grid;
+            grid-template-columns: repeat(9,auto);
+            grid-template-rows: repeat(1,auto);
+            gap: 5px;
+            margin: auto;
+        }
+
+        button{
+            padding: 10px 10px;
+            border-radius: 5px;
+        }
+
+        #container>button:first-child{
+            background-color: #017bff;
+        }
+
+        #container>button:nth-child(2){
+            background-color: #6d757d;
+        }
+
+        #container>button:nth-child(3){
+            background-color: #27a845;
+        }
+        
+        #container>button:nth-child(4){
+            background-color: #dc3545;
+        }
+
+        #container>button:nth-child(5){
+            background-color: #ffc00a;
+        }
+
+        #container>button:nth-child(6){
+            background-color: #10a3b9;
+        }
+
+        #container>button:nth-child(7){
+            background-color: #f8f8fa;
+            color: black;
+        }
+
+        #container>button:nth-child(8){
+            background-color: #343a40;
+        }
+
+        #container>button:last-child{
+            color: #017bff;
+            background-color: white;
+        }
+
+
+    </style>
+</head>
+    <body>
+        <div id="container">
+            <button>Primary</button>
+            <button>Secondary</button>
+            <button>Sucess</button>
+            <button>Danger</button>
+            <button>Warning</button>
+            <button>Info</button>
+            <button>Light</button>
+            <button>Dark</button>
+            <button>Link</button>
+        </div>
+    </body>
+</html>

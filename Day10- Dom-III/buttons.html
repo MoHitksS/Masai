@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons</title>
+    <style>
+
+        #container{
+            width: 65%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            margin: auto;
+            
+        }
+
+        #container >button{
+            width: 120px;
+            height: 50px;
+            margin: auto;
+            border-radius: 5px;
+            border: none;
+
+        }
+    </style>
+</head>
+    <body>
+        <div id="container"></div>
+    </body>
+</html>
+
+<script>
+
+    let obj= [
+        {name:"Primary",color:"white",bgColor:"#027cff"},
+        {name:"Secondary",color:"white",bgColor:"grey"},
+        {name:"Success",color:"white",bgColor:"#28a745"},
+        {name:"Danger",color:"white",bgColor:"#dc3545"},
+        {name:"Warning",color:"black",bgColor:"#ffc008"},
+        {name:"Info",color:"white",bgColor:"#14a2b8"},
+        {name:"Light",color:"black",bgColor:"#f8fafa"},
+        {name:"Dark",color:"white",bgColor:"#343a40"},
+        {name:"Link",color:"blue",bgColor:"white"},
+    ]
+
+    for(let i = 0;i<obj.length;i++){
+        let btn = document.createElement("button");
+        btn.innerText = obj[i].name
+        btn.style.backgroundColor = obj[i].bgColor
+        btn.style.color = obj[i].color
+        document.querySelector("#container").append(btn);
+    }
+
+</script>

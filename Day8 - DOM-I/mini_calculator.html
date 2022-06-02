@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Calculator</title>
+</head>
+    <body>
+        <input type="number" placeholder="enter 1st number" id="value1">
+        <input type="number" placeholder="enter 2nd number" id="value2">
+        <br>
+        <br>
+        <button onclick="Add()">Add</button>
+        <button onclick="Subtract()">Subtract</button>
+        <button onclick="Multiply()">Multiply</button>
+        <button onclick="Divide()">Divide</button>
+        <br>
+        <br>
+        <p id="result">Result</p>
+    </body>
+</html>
+
+<script>
+    function Add(){
+        let a = document.getElementById("value1").value;
+        let b = document.getElementById("value2").value;
+
+        document.getElementById("result").innerText = "The Addition of 1st and 2nd Number is " +  (Number(a)+Number(b));
+
+    }
+
+    function Subtract(){
+        let a = document.getElementById("value1").value;
+        let b = document.getElementById("value2").value;
+
+        document.getElementById("result").innerText = "The Subraction of 1st and 2nd Number is " +  (Number(a)-Number(b));
+    }
+
+    function Multiply(){
+        let a = document.getElementById("value1").value;
+        let b = document.getElementById("value2").value;
+
+        document.getElementById("result").innerText = "The Multiplication of 1st and 2nd Number is " +  (Number(a)*Number(b));
+    }
+
+    function Divide(){
+        let a = document.getElementById("value1").value;
+        let b = document.getElementById("value2").value;
+
+        document.getElementById("result").innerText = "The Divison of 1st and 2nd Number is " +  (Number(a)/Number(b));
+    }
+</script>

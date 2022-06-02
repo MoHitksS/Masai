@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard</title>
+    <style>
+
+        *{
+            font-weight: bolder;
+        }
+        #container{
+            width:20%;
+            height: auto;
+            margin: auto;
+        }
+
+        #display{
+            display: grid;
+            grid-template-columns: repeat(2,auto);
+            grid-template-rows: repeat(1,auto);
+            margin: auto;
+            justify-content: space-between;
+            text-align: center;
+        }
+
+        #display1>div{
+            width: 80px;
+            height: 50px;
+            border: 2px solid black;
+            background-color: red;
+            margin: auto;
+            margin-bottom: -10%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        #display2>div{
+            width: 80px;
+            height: 50px;border: 2px solid black;
+            background-color: green;
+            margin: auto;
+            margin-bottom: -10%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        #input{
+            text-align: center;
+            
+        }
+
+        #input>p+div{
+            width: 150px;
+            height: 50px;
+            border: 2px solid black;
+            background-color: grey;
+            margin: auto;
+            margin-top: -5%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        #button{
+            display: grid;
+            grid-template-columns: repeat(3,auto);
+            grid-template-rows: repeat(3,auto);
+            gap: 10px;
+            margin: auto;
+            margin-top: 20px;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        #button>div{
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+        }
+
+        #button>div:nth-child(10){
+            border: none;
+        }
+
+        #button>div:last-child{
+            border: 2px solid black;
+            background-color: purple;
+            color:white;
+        }
+
+        #result{
+            margin: auto;
+            margin-top:8%;
+            width: 150px;
+            height: 50px;
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+            color: white;
+        }
+
+        .green{
+            border: 2px solid black;
+            background-color: #668100;
+        }
+
+        .orange{
+            border: 2px solid black;
+            background-color: #ff6500;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="display">
+            <div id="display1">
+                <div>43</div>
+                <p>MIN</p>
+            </div>
+    
+            <div id="display2">
+                <div>2019</div>
+                <p>MAX</p>
+            </div>
+        </div>
+    
+        <div id="input">
+            <p>SCORE</p>
+            <div>#</div>
+        </div>
+    
+        <div id="button">
+            <div class="green">1</div>
+            <div class="orange">2</div>
+            <div class="green">3</div>
+            <div class="orange">4</div>
+            <div class="orange">5</div>
+            <div class="orange">6</div>
+            <div class="green">7</div>
+            <div class="orange">8</div>
+            <div class="green">9</div>
+            <div>0</div>
+        </div>
+    
+        <div id="result">
+            <div>ENTER</div>
+        </div>
+
+    </div>
+    
+</body>
+</html>+
+<script>
+    let x = document.querySelectorAll("#button>div");
+    let min = document.querySelector("#display1>div").innerText;
+    let max = document.querySelector("#display2>div").innerText;
+    min = Number(min);
+    max = Number(max);
+    let bag = ""
+    for(let i = 0;i<x.length;i++){
+        x[i].addEventListener("click",type);
+    }
+
+    function type(){
+        let num = event.target.innerText
+        bag = bag + num;
+        document.querySelector("#input>div").innerText = bag;
+        bag = Number(bag)
+        if(bag < min){
+            min = bag;
+        }
+        else if(bag > max ){
+            max = bag;
+        }
+    }
+
+    let y = document.querySelector("#result").addEventListener("click",check);
+    function check(){
+        let res = event.target.innerText
+        if(res === "ENTER"){
+            document.querySelector("#display1>div").innerText = min;
+            document.querySelector("#display2>div").innerText = max;
+        }
+    }
+
+    document.querySelector("#input>div").addEventListener("click",blank);
+    function blank(){
+        bag ="";
+        document.querySelector("#input>div").innerText = "#"
+    }
+
+</script>
