@@ -8,15 +8,15 @@
 </head>
     <body>
         <select id = "continent_select">
-            <option value = "Select Country">Select Country</option>
+            <option value = "Select_Country">Select Country</option>
             <option value = "India">India</option>
-            <option value = "United States of America">United States of America</option>
+            <option value = "United_States_of_America">United States of America</option>
             <option value = "China">China</option>
             <option value = "Nepal">Nepal</option>
             <option value = "Australia">Australia</option>
             <option value = "France">France</option>
             <option value = "Germany">Germany</option>
-            <option value = "South Africa">South Africa</option>
+            <option value = "South_Africa">South Africa</option>
             <option value = "Nigeria">Nigeria</option>
             <option value = "Mexico">Mexico</option>
             <option value = "Argentina">Argentina</option>
@@ -30,62 +30,57 @@
 </html>
 
 <script>
-    let x = document.querySelectorAll("#continent_select option")
-    for(let i = 0;i<x.length;i++){
-        x[i].addEventListener("click",find) 
-    }
-
-    function find(event){
-        console.log(event)
-              
-        // switch(x){
-        //     case 0: alert("The Continental is Asia")
-        //     break;
-
-        //     case 1: alert("The Continental is North & Central America")
-        //     break;
-
-        //     case "China": alert("The Continental is Asia")
-        //     break;
-            
-        //     case "Nepal": alert("The Continental is Asia")
-        //     break;
-            
-        //     case "Australia": alert("The Continental is Oceania")
-        //     break;
-            
-        //     case "France": alert("The Continental is Africa")
-        //     break;
-            
-        //     case "Germany": alert("The Continental is Africa")
-        //     break;
-            
-        //     case "South Africa": alert("The Continental is Africa")
-        //     break;
-            
-        //     case "Nigeria": alert("The Continental is Africa")
-        //     break;
-            
-        //     case "Mexico": alert("The Continental is North & Central America")
-        //     break;
-            
-        //     case "Argentina": alert("The Continental is South America")
-        //     break;
-            
-        //     case "Brazil": alert("The Continental is South America")
-        //     break;
-            
-        //     case "Canada": alert("The Continental is North & Central America")
-        //     break;
-            
-        //     case "Singapore": alert("The Continental is Asia")
-        //     break
-        
-        //     case "Sweden": alert("The Continental is Europe")
-        //     break;
-        // }
-    }
-            
     
+    document.querySelector("#btn").addEventListener("click",find)
+
+    function find(){
+        let x = document.querySelector("#continent_select").value;
+            switch(x){
+            case "India": alert("The Continental is Asia")
+            break;
+
+            case "United_States_of_America": alert("The Continental is North & Central America")
+            break;
+
+            case "China": alert("The Continental is Asia")
+            break;
+            
+            case "Nepal": alert("The Continental is Asia")
+            break;
+            
+            case "Australia": alert("The Continental is Oceania")
+            break;
+            
+            case "France": alert("The Continental is Africa")
+            break;
+            
+            case "Germany": alert("The Continental is Africa")
+            break;
+            
+            case "South_Africa": alert("The Continental is Africa")
+            break;
+            
+            case "Nigeria": alert("The Continental is Africa")
+            break;
+            
+            case "Mexico": alert("The Continental is North & Central America")
+            break;
+            
+            case "Argentina": alert("The Continental is South America")
+            break;
+            
+            case "Brazil": alert("The Continental is South America")
+            break;
+            
+            case "Canada": alert("The Continental is North & Central America")
+            break;
+            
+            case "Singapore": alert("The Continental is Asia")
+            break
+        
+            case "Sweden": alert("The Continental is Europe")
+            break;
+        }
+    }
     
 </script>
